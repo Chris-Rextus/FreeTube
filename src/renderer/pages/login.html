@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login to FreeTube</title>
   <link rel="stylesheet" href="../styles/login.css">
+  <script src="../scripts/login.js"></script>
 </head>
 <body>
   <div class="login-container">
@@ -15,21 +16,12 @@
     <div class="login-box">
       <h2>Sign in</h2>
       <p>to continue to FreeTube</p>
-      <form id="login-form">
-        <div class="input-group">
-          <input type="email" id="email" placeholder="Email or phone" required>
-        </div>
-        <div class="input-group">
-          <input type="password" id="password" placeholder="Password" required>
-        </div>
-        <button type="submit" class="login-button">Sign in</button>
-      </form>
+      <button id="login-button" class="login-button">Sign in with Google</button>
       <div class="footer-links">
         <a href="#">Create account</a>
         <a href="#">Forgot password?</a>
       </div>
     </div>
   </div>
-  <script src="../scripts/login.js"></script>
 </body>
 </html>

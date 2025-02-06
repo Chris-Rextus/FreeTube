@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreeTube - Search Videos</title>
+  <link rel="stylesheet" href="../styles/search.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <nav class="profile-nav">
+        <ul>
+          <li>
+            <a href="#" id="profile-button">
+              <span class="icon">&#128100;</span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="search-videos">
+              <span class="icon">&#128269;</span>
+              <span>Search Videos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="history">
+              <span class="icon">&#128214;</span>
+              <span>History</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="liked-videos">
+              <span class="icon">&#10084;</span>
+              <span>Liked Videos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="subscriptions">
+              <span class="icon">&#128214;</span>
+              <span>Subscriptions</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- RIGHT MAIN CONTENT -->
+    <main class="main-content">
+      <header class="search-header">
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search videos..." />
+          <button id="search-btn">Search</button>
+        </div>
+      </header>
+      <section class="search-results">
+        <div class="videos-grid" id="videos-grid">
+          <p class="placeholder">Please enter a search query.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="../scripts/search.js"></script>
+</body>
+</html>

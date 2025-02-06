@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreeTube - Profile</title>
+  <link rel="stylesheet" href="../styles/profile.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <nav class="profile-nav">
+        <ul>
+          <li>
+            <a href="#" id="profile-button">
+              <span class="icon">&#128100;</span>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="search-videos">
+              <span class="icon">&#128269;</span>
+              <span>Search Videos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="history">
+              <span class="icon">&#128214;</span>
+              <span>History</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="liked-videos">
+              <span class="icon">&#10084;</span>
+              <span>Liked Videos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="subscriptions">
+              <span class="icon">&#128214;</span>
+              <span>Subscriptions</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- RIGHT MAIN CONTENT -->
+    <main class="main-content">
+      <header class="profile-header">
+        <div class="profile-info">
+          <!-- The profile picture and name will be updated by profile.js -->
+          <img src="../assets/default-profile.png" alt="Profile Picture" class="profile-pic" />
+          <h1 class="profile-name">User Name</h1>
+        </div>
+      </header>
+
+      <!-- Section for user created folders (and any additional content) -->
+      <section class="profile-content">
+        <div class="folders-header">
+          <h2>Folders:</h2>
+          <button id="open-create-folder-btn" class="create-folder-open-btn">+ Create Folder</button>
+        </div>
+        <div class="folders-list" id="folders-list">
+          <!-- Folder items will be dynamically appended here -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Create Folder Modal -->
+  <div id="create-folder-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Create Folder</h2>
+      <input type="text" id="folder-name" placeholder="Folder Name" />
+      <button id="create-folder-btn">Create</button>
+    </div>
+  </div>
+
+  <!-- Include the profile.js script -->
+  <script src="../scripts/profile.js"></script>
+</body>
+</html>

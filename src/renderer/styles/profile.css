@@ -1,0 +1,245 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* Container for the two columns */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar styles (left column) */
+  .sidebar {
+    background-color: #2c2c2c;  /* Dark background */
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-nav li {}
+  
+  /* Sidebar Navigation Links */
+  .profile-nav a {
+    text-decoration: none;
+    color: #fff;  /* White text */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .profile-nav a:hover {
+    background-color: #ff0000;  /* YouTube Red on hover */
+    color: #fff;
+  }
+  
+  .profile-nav a .icon {
+    margin-right: 10px;
+  }
+  
+  /* Special styling for the Profile button icon (optional) */
+  #profile-button .icon {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  
+  /* Main content styles (right column) */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #ff0000;
+  }
+  
+  .profile-name {
+    font-size: 28px;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+    padding: 30px 20px;
+  }
+  
+  /* Folders Header */
+  .folders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .folders-header h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #222;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 5px;
+  }
+  
+  /* "Create Folder" button styling */
+  .create-folder-open-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-folder-open-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Folders List */
+  .folders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Folder Item Styling */
+  .folder-item {
+    width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .folder-item .folder-icon {
+    font-size: 48px;
+    color: #ff0000;  /* Change icon color if desired */
+  }
+  
+  .folder-item .folder-name {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .modal-content .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-content .close:hover,
+  .modal-content .close:focus {
+    color: #000;
+  }
+  
+  #folder-name {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #create-folder-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #create-folder-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+    }
+    
+    .folders-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .folders-header button {
+      margin-top: 10px;
+    }
+  }
+  
